@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 25, 2017 11:33:06 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Proizvod" table="proizvod" catalog="ski_oprema" optimistic-lock="version">
+        <id name="proizvodId" type="java.lang.Integer">
+            <column name="proizvod_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="brend" class="entity.Brend" lazy="false" fetch="select">
+            <column name="brend_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="kategorija" class="entity.Kategorija" lazy="false" fetch="select">
+            <column name="kategorija_id" not-null="true" />
+        </many-to-one>
+        <property name="nazivProizvoda" type="string">
+            <column name="naziv_proizvoda" length="45" not-null="true" />
+        </property>
+        <property name="referencuSlike" type="string">
+            <column name="referencu_slike" length="45" not-null="true" />
+        </property>
+        <property name="cena" type="big_decimal">
+            <column name="cena" precision="9" not-null="true" />
+        </property>
+        <property name="velicina" type="string">
+            <column name="velicina" length="100" not-null="true" />
+        </property>
+        <property name="opis" type="string">
+            <column name="opis" length="500" not-null="true" />
+        </property>
+        <set name="stavkas" table="stavka" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="proizvod_id" not-null="true" />
+            </key>
+            <one-to-many class="entity.Stavka" />
+        </set>
+    </class>
+</hibernate-mapping>

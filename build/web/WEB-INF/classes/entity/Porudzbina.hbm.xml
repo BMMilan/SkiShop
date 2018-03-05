@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 25, 2017 11:33:06 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Porudzbina" table="porudzbina" catalog="ski_oprema" optimistic-lock="version">
+        <id name="porudzbinaId" type="java.lang.Integer">
+            <column name="porudzbina_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="korisnik" class="entity.Korisnik" lazy="false" fetch="select">
+            <column name="korisnik_id" not-null="true" />
+        </many-to-one>
+        <property name="datum" type="date">
+            <column name="datum" length="10" not-null="true" />
+        </property>
+        <set name="stavkas" table="stavka" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="porudzbina_id" not-null="true" />
+            </key>
+            <one-to-many class="entity.Stavka" />
+        </set>
+    </class>
+</hibernate-mapping>

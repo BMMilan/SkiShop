@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+    
+    body
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+ margin: 0;
+}
+input[type=button] {
+    display: table-row;
+    color:black;
+    background-color: lightblue;
+    border: 1px solid white;
+    padding: 5px;
+    height: 45px;
+    width: 170px;
+    cursor: pointer;
+    outline: none;
+}
+button 
+{
+    display: table-row;
+    color:black;
+    background-color: red;
+    border: 1px solid white;
+    padding: 5px;
+    height: 45px;
+    width: 170px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    
+    border: 5px solid black;
+    color:black;
+}
+a
+{
+    text-decoration: none;
+}
+.content
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding: 10px;
+    height: 1500px;
+    border: 5px solid black;
+}
+div.container 
+{
+    border: 5px solid red;
+    width: 85%;
+    height: 1000px;
+    margin-left:200px;
+    display: table;
+}
+.proizvodjaci 
+{
+    float:left;
+}
+div.container ul {
+    width: 100px;
+    display: inline;
+    
+}
+div.container ul li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+div.item
+{
+    margin-left: 25px;
+    width: 225px;
+    height: 400px;
+    background-color: white;
+    border: 5px solid black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+div.item img
+{
+    width: 180px;
+    height: 220px;
+}
+.dropdown-content a:hover {background-color: lightgray;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item a:hover {
+    background-color: white;
+}
+
+.item a input:hover {
+  background-color: red;
+  color:black;
+}
+input[type=button]
+{
+    display: table-row;
+    color:white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    height: 45px;
+    width: 170px;
+    cursor: pointer;
+    outline: none;
+    overflow: visible;
+}
+button.specifikacije {
+    height: 20px;
+    border:none;
+    background-color: inherit;
+    margin-bottom: 5px;
+    padding: 2px;
+    outline: none;
+    overflow: visible;
+}
+
+button.specifikacije:hover {
+    color:red;
+}

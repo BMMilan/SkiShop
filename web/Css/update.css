@@ -1,0 +1,113 @@
+body {
+    margin-left: 0px;
+}
+
+.content
+{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background-color: white;
+    padding: 10px;
+    height: 600px;
+    border: 5px solid black;
+    font-size: 17px;
+}
+
+div#selectdiv {
+    border: 2px solid red;
+    width:350px;
+    padding: 5px;
+    float: left;
+}
+
+div#selectdiv select {
+    width: 300px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+div#selectdiv table tr td
+{
+    padding: 5px;
+}
+
+
+div#showProizvod 
+{
+     border-radius: 5px;
+     float: left;
+     margin-left: 15px;
+     width: 900px;
+     height: 400px;
+     padding: 10px;
+     border: 2px solid red;
+     
+     
+}
+
+p#messageBar {
+  
+  font-size: 18px;
+  text-align: center;  
+}
+
+div#showProizvod table
+{
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    width: inherit;
+    padding-left: 20px;
+    
+}
+
+div#showProizvod table tr td
+{
+    padding: 5px;
+    width: inherit;
+   
+    
+}
+
+div#showProizvod table tr td select
+{
+    padding: 5px;
+    width: 300px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+div#showProizvod table tr td input {
+    width: 300px;
+    padding: 3px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div#showProizvod table tr td button {
+    width: 300px;
+    padding: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+div#showProizvod table tr td button:hover {
+    background-color: white;
+}
+
+div#showProizvod table tr td select:active {
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;    
+}
+
+
+input[type=radio] {
+    cursor: pointer;
+    background-color: lightblue;
+}

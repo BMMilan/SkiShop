@@ -1,0 +1,73 @@
+body {
+    margin-left: 0px;
+}
+
+.content
+{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background-color: white;
+    padding: 10px;
+    height: 500px;
+    border: 5px solid black;
+   
+}
+
+div#prijava {
+    
+    margin: 10px;
+    border: 5px solid red;
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    float: left;
+}
+
+div#prijava p {
+    font-size: 17px;
+}
+
+
+
+div#prijava table {
+    border-collapse: collapse;
+}
+
+div#prijava table td {
+    padding: 17px;
+    text-align: left;
+}
+
+div#register {
+    float: right;
+    width: 700px;
+    border: 5px solid black;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div#register table {
+     
+     font-size: 17px;
+     
+    
+}
+
+div#register table td {
+    padding: 10px;
+    width: 150px;
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 60px;
+    
+}
+div#register h3{
+    font-size: 23px;
+}
